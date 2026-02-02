@@ -22,23 +22,23 @@ export default function App() {
       <AppBar position="static" sx={{ bgcolor: "#343a40" }}>
         <Toolbar sx={{ gap: 1 }}>
           <Typography variant="h6" sx={{ fontWeight: 800, mr: 2 }}>
-            Mi App Bootstrap
+          Gestión de Categorías
           </Typography>
 
           <Button component={NavLink} to="/" end sx={linkBtnSx}>
             Home
           </Button>
-          <Button component={NavLink} to="/Categoria" sx={linkBtnSx}>
-            Categoria
+          <Button component={NavLink} to="/productos" sx={linkBtnSx}>
+            Productos
           </Button>
-          <Button component={NavLink} to="/Nueva Categoria" sx={linkBtnSx}>
-            Nueva Categoria
+          <Button component={NavLink} to="/calculo" sx={linkBtnSx}>
+            Calculo
           </Button>
-          <Button component={NavLink} to="/multiplica" sx={linkBtnSx}>
-            Multiplica
+          <Button component={NavLink} to="/nueva categoria" sx={linkBtnSx}>
+            Nueva categoria
           </Button>
-          <Button component={NavLink} to="/acerca" sx={linkBtnSx}>
-            Acerca de
+          <Button component={NavLink} to="/informacion" sx={linkBtnSx}>
+            informacion
           </Button>
 
           <Box sx={{ flex: 1 }} />
@@ -49,9 +49,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/productos" element={<ProductsPage />} />
-          <Route path="/suma" element={<SumPage />} />
-          <Route path="/multiplica" element={<MultiplyPage />} />
-          <Route path="/acerca" element={<AboutPage />} />
+          <Route path="/calculo" element={<SumPage />} />
+          <Route path="/nueva categoria" element={<MultiplyPage />} />
+          <Route path="/informaciom" element={<AboutPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Container>

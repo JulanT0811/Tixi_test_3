@@ -70,8 +70,6 @@ export default function ProductsPage() {
               <TableCell>ID</TableCell>
               <TableCell>Nombre</TableCell>
               <TableCell>Categoría</TableCell>
-              <TableCell align="right">Precio</TableCell>
-              <TableCell align="right">Stock</TableCell>
               <TableCell>Foto</TableCell>
             </TableRow>
           </TableHead>

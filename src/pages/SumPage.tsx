@@ -10,11 +10,14 @@ export default function SumPage() {
   return (
     <Paper sx={{ p: 3, borderRadius: 3 }}>
       <Typography variant="h5" fontWeight={900} gutterBottom>
-        Suma (a + b)
+      Cálculos Matemáticos
+      </Typography>
+      <Typography color="text.secondary">
+      Área de Triángulo
       </Typography>
 
       <TextField
-        label="A"
+        label="Base"
         type="number"
         value={a}
         onChange={(e) => setA(Number(e.target.value))}
@@ -22,7 +25,7 @@ export default function SumPage() {
       />
 
       <TextField
-        label="B"
+        label="altura "
         type="number"
         value={b}
         onChange={(e) => setB(Number(e.target.value))}
@@ -32,6 +35,30 @@ export default function SumPage() {
       <Typography sx={{ mt: 1 }}>
         Resultado: <strong>{result}</strong>
       </Typography>
+
+      <Typography color="text.secondary">
+      Área de Rectángulo
+      </Typography>
+
+      <TextField
+        label="Largo"
+        type=""
+        value={a}
+        onChange={(e) => setA(Number(e.target.value))}
+        sx={{ mr: 2, mb: 2 }}
+      />
+
+      <TextField
+        label="Ancho"
+        type=""
+        value={b}
+        onChange={(e) => setB(Number(e.target.value))}
+        sx={{ mb: 2 }}
+      />
+      <Typography sx={{ mt: 1 }}>
+        Resultado: <strong>{result}</strong>
+      </Typography>
     </Paper>
   );
 }
+

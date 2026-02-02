@@ -4,15 +4,17 @@ export default function AboutPage() {
   return (
     <Paper sx={{ p: 3, borderRadius: 3 }}>
       <Typography variant="h5" fontWeight={900} gutterBottom>
-        Acerca de
+      Información del Sistema
       </Typography>
 
       <Typography color="text.secondary">
-        Ejercicio de Programación III: Router + Material UI + consumo simple de API.
+      Sistema académico para practicar consumo de APIs públicas, renderizado dinámico y lógica de programación base, ideal para migrar posteriormente a ReactJS.
       </Typography>
-
+      <center>
+        <img src="https://fastly.picsum.photos/id/970/1200/500.jpg?hmac=RjoA2ETCPtjTqQtQnjY7hDHCaI4qSF8WicNH44QyFcA" alt="" />
+      </center>
       <Typography sx={{ mt: 2 }}>
-        Reglas: 6 páginas en <strong>src/pages</strong> y sin crear capas extra de servicios.
+        
       </Typography>
     </Paper>
   );

@@ -1,4 +1,4 @@
-import { Paper, Typography } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 
 export default function HomePage() {
   return (
@@ -12,8 +12,12 @@ export default function HomePage() {
       </Typography>
 
       <Typography sx={{ mt: 2 }}>
-        Usa el menú superior (oscuro) para navegar entre páginas.
+      <center>
+        <img src="https://fastly.picsum.photos/id/1060/800/300.jpg?hmac=Ul1hM6d2ZnlsATmBJPksBo_mOUGLkhUJB1EHdb3OYlY" alt="" />
+      </center>
+            
       </Typography>
     </Paper>
+
   );
 }

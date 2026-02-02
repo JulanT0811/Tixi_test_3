@@ -1,4 +1,4 @@
-import { Paper, TextField, Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 
 export default function NotFoundPage() {
   return (
@@ -6,16 +6,13 @@ export default function NotFoundPage() {
       <Typography variant="h5" fontWeight={900} gutterBottom>
       Registrar Nueva Categoría
       </Typography>
-       <Typography variant="h5" fontWeight={900} gutterBottom>
-              Nombre:
-            </Typography>
-           
-      
-            
-
+      <Typography color="text.secondary">
+      Nombre:
+      </Typography>            
       <Typography color="text.secondary">
       Descripción:
       </Typography>
     </Paper>
   );
-}
+}   
+
