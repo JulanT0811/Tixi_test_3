@@ -19,7 +19,6 @@ export default function SumPage() {
       <TextField
         label="Base"
         type="number"
-        value={a}
         onChange={(e) => setA(Number(e.target.value))}
         sx={{ mr: 2, mb: 2 }}
       />
@@ -27,7 +26,6 @@ export default function SumPage() {
       <TextField
         label="altura "
         type="number"
-        value={b}
         onChange={(e) => setB(Number(e.target.value))}
         sx={{ mb: 2 }}
       />

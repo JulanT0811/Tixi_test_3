@@ -2,10 +2,10 @@ import { useMemo, useState } from "react";
 import { Paper, TextField, Typography } from "@mui/material";
 
 export default function MultiplyPage() {
-  const [a, setA] = useState(0);
-  const [b, setB] = useState(0);
+  const [a, setA] = useState();
+  const [b, setB] = useState();
 
-  const result = useMemo(() => a * b, [a, b]);
+  const result = useMemo(() => a + b, [a, b]);
 
   return (
     <Paper sx={{ p: 3, borderRadius: 3 }}>
@@ -17,9 +17,8 @@ export default function MultiplyPage() {
       </Typography>
 
       <TextField
-        label="A"
+        label=""
         type="text"
-        value={a}
         onChange={(e) => setA(Text(e.target.value))}
         sx={{ mr: 2, mb: 2 }}
       />
@@ -30,7 +29,6 @@ export default function MultiplyPage() {
       <TextField
         label=""
         type="text"
-        value={b}
         onChange={(e) => setB(Text(e.target.value))}
         sx={{ mb: 2 }}
       />
