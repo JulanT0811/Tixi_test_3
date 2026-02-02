@@ -10,27 +10,33 @@ export default function MultiplyPage() {
   return (
     <Paper sx={{ p: 3, borderRadius: 3 }}>
       <Typography variant="h5" fontWeight={900} gutterBottom>
-        Multiplica (a * b)
+      Registrar Nueva Categoría
+      </Typography>
+      <Typography color="text.secondary">
+      Nombre:
       </Typography>
 
       <TextField
         label="A"
-        type="number"
+        type="text"
         value={a}
-        onChange={(e) => setA(Number(e.target.value))}
+        onChange={(e) => setA(Text(e.target.value))}
         sx={{ mr: 2, mb: 2 }}
       />
-
+      <Typography color="text.secondary">
+      Descripción:
+      </Typography>
+      
       <TextField
-        label="B"
-        type="number"
+        label=""
+        type="text"
         value={b}
-        onChange={(e) => setB(Number(e.target.value))}
+        onChange={(e) => setB(Text(e.target.value))}
         sx={{ mb: 2 }}
       />
 
       <Typography sx={{ mt: 1 }}>
-        Resultado: <strong>{result}</strong>
+        Guardar categoria <strong>{result}</strong>
       </Typography>
     </Paper>
   );

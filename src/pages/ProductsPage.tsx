@@ -25,12 +25,12 @@ export default function ProductsPage() {
       try {
         // Sin paginación en UI: pedimos un page_size grande y mostramos lo que venga
         const url =
-          "https://higuera-billing-api.desarrollo-software.xyz/api/products/?page=1&page_size=100";
+          "https://akabab.github.io/starwars-api/api/all.json";
         const res = await fetch(url);
         const data = await res.json();
 
         // La API suele devolver { count, next, previous, results: [] }
-        const list = Array.isArray(data?.results) ? data.results : Array.isArray(data) ? data : [];
+        const list = Array.isArray(data?.masters) ? data.masters : Array.isArray(data) ? data : [];
         setItems(list);
       } catch (e: any) {
         console.error(e);
@@ -70,7 +70,6 @@ export default function ProductsPage() {
               <TableCell>ID</TableCell>
               <TableCell>Nombre</TableCell>
               <TableCell>Categoría</TableCell>
-              <TableCell>Foto</TableCell>
             </TableRow>
           </TableHead>
 
