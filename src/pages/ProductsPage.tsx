@@ -69,7 +69,6 @@ export default function ProductsPage() {
             <TableRow>
               <TableCell>ID</TableCell>
               <TableCell>Nombre</TableCell>
-              <TableCell>Categoría</TableCell>
             </TableRow>
           </TableHead>
 
@@ -82,14 +81,14 @@ export default function ProductsPage() {
                 <TableCell align="right">{p?.price ?? "-"}</TableCell>
                 <TableCell align="right">{p?.stock ?? "-"}</TableCell>
                 <TableCell>
-                  {p?.url_image ? (
+                  {p?.image ? (
                     <img
-                      src={p.url_image}
+                      src={p.image}
                       alt={p?.name ?? "producto"}
                       style={{ width: 48, height: 48, objectFit: "cover", borderRadius: 8, border: "1px solid rgba(0,0,0,.15)" }}
                       onError={(e) => {
                         (e.currentTarget as HTMLImageElement).src =
-                          "https://via.placeholder.com/80?text=No+Img";
+                          "https://akabab.github.io/starwars-api/api/all.json";
                       }}
                     />
                   ) : (
